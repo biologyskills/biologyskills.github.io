@@ -3,7 +3,7 @@ layout: default
 title: Inheritance and phase
 parent: Genomics
 grand_parent: Skills
-nav_order: 60
+nav_order: 70
 permalink: /skills/genomics/references/inheritance-and-phase.html
 id: genomics.inheritance-and-phase
 domain: genomics

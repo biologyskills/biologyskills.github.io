@@ -3,7 +3,7 @@ layout: default
 title: Genomic intervals
 parent: Genomics
 grand_parent: Skills
-nav_order: 50
+nav_order: 60
 permalink: /skills/genomics/references/genomic-intervals.html
 id: genomics.genomic-intervals
 domain: genomics

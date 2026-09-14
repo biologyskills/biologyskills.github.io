@@ -3,7 +3,7 @@ layout: default
 title: Coding sequence and protein consequences
 parent: Genomics
 grand_parent: Skills
-nav_order: 20
+nav_order: 30
 permalink: /skills/genomics/references/coding-sequence-and-protein-consequences.html
 id: genomics.coding-sequence-and-protein-consequences
 domain: genomics

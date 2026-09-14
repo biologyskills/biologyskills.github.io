@@ -3,7 +3,7 @@ layout: default
 title: Variant call files and indexes
 parent: Genomics
 grand_parent: Skills
-nav_order: 120
+nav_order: 140
 permalink: /skills/genomics/references/variant-call-files-and-indexes.html
 id: genomics.variant-call-files-and-indexes
 domain: genomics

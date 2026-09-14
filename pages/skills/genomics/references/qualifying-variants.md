@@ -3,7 +3,7 @@ layout: default
 title: Qualifying variants
 parent: Genomics
 grand_parent: Skills
-nav_order: 70
+nav_order: 90
 permalink: /skills/genomics/references/qualifying-variants.html
 id: genomics.qualifying-variants
 domain: genomics

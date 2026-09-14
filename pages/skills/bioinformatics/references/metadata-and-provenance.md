@@ -3,7 +3,7 @@ layout: default
 title: Metadata and provenance
 parent: Bioinformatics
 grand_parent: Skills
-nav_order: 10
+nav_order: 20
 permalink: /skills/bioinformatics/references/metadata-and-provenance.html
 id: bioinformatics.metadata-and-provenance
 domain: bioinformatics

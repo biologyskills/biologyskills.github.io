@@ -3,7 +3,7 @@ layout: default
 title: Gene expression
 parent: Genomics
 grand_parent: Skills
-nav_order: 30
+nav_order: 40
 permalink: /skills/genomics/references/gene-expression.html
 id: genomics.gene-expression
 domain: genomics

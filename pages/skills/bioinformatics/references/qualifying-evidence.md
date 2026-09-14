@@ -3,7 +3,7 @@ layout: default
 title: Qualifying evidence
 parent: Bioinformatics
 grand_parent: Skills
-nav_order: 30
+nav_order: 40
 permalink: /skills/bioinformatics/references/qualifying-evidence.html
 id: bioinformatics.qualifying-evidence
 domain: bioinformatics

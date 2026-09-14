@@ -3,7 +3,7 @@ layout: default
 title: Reference genomes
 parent: Genomics
 grand_parent: Skills
-nav_order: 80
+nav_order: 100
 permalink: /skills/genomics/references/reference-genomes.html
 id: genomics.reference-genomes
 domain: genomics

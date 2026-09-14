@@ -3,7 +3,7 @@ layout: default
 title: QC outputs and sample identity
 parent: Bioinformatics
 grand_parent: Skills
-nav_order: 20
+nav_order: 30
 permalink: /skills/bioinformatics/references/qc-outputs-and-sample-identity.html
 id: bioinformatics.qc-outputs-and-sample-identity
 domain: bioinformatics

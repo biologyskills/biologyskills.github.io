@@ -3,7 +3,7 @@ layout: default
 title: Transcripts
 parent: Genomics
 grand_parent: Skills
-nav_order: 110
+nav_order: 130
 permalink: /skills/genomics/references/transcripts.html
 id: genomics.transcripts
 domain: genomics

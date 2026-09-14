@@ -3,7 +3,7 @@ layout: default
 title: Genome organisation
 parent: Genomics
 grand_parent: Skills
-nav_order: 40
+nav_order: 50
 permalink: /skills/genomics/references/genome-organisation.html
 id: genomics.genome-organisation
 domain: genomics
