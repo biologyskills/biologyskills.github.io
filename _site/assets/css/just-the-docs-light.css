@@ -725,10 +725,7 @@ blockquote {
 }
 @media (min-width: 66.5rem) {
   .main {
-    margin-left: max(
-      264px,
-      calc((100% - 1064px) / 2 + 264px)
-    );
+    margin-left: max(264px, (100% - 1064px) / 2 + 264px);
   }
 }
 
@@ -7598,6 +7595,14 @@ blockquote.warning-title > p:nth-child(2) {
 }
 blockquote.warning-title > p:last-child {
   margin-bottom: 0;
+}
+
+.nav-list-expander {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=just-the-docs-light.css.map */

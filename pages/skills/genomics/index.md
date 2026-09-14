@@ -50,17 +50,17 @@ When exact syntax, field definitions, identifiers, nomenclature, or ontology ter
 
 Read the relevant reference when the task depends on it:
 
-- [`references/genome-organisation.md`](references/genome-organisation.md) for DNA, chromosomes, genes, genomes, genomic compartments, and the distinction between genetic and inherited
-- [`references/reference-genomes.md`](references/reference-genomes.md) for assemblies, patch releases, exact reference identity, sequence provenance, coordinate systems, and migration
-- [`references/reference-sequence-files.md`](references/reference-sequence-files.md) for FASTA, sequence identifiers, FAI indexes, dictionaries, masking, and reference-file provenance
-- [`references/sequencing-reads-and-quality.md`](references/sequencing-reads-and-quality.md) for FASTQ, paired reads, preprocessing, and Phred-scaled quality
-- [`references/alignment-files-and-indexes.md`](references/alignment-files-and-indexes.md) for SAM, BAM, CRAM, alignment semantics, BAI, CSI, and CRAI
-- [`references/genomic-intervals.md`](references/genomic-intervals.md) for BED, interval coordinate conventions, strand, and interval semantics
-- [`references/variant-call-files-and-indexes.md`](references/variant-call-files-and-indexes.md) for VCF, BCF, gVCF, genotype fields, BGZF, TBI, and CSI
-- [`references/variant-representation.md`](references/variant-representation.md) for allele identity, normalization, decomposition, equivalent representations, and VCF-versus-HGVS representation
-- [`references/variant-nomenclature.md`](references/variant-nomenclature.md) for HGVS sequence-variant descriptions, versioned reference sequences, MANE transcript selection, molecular-level prefixes, and predicted versus observed consequences
-- [`references/transcripts.md`](references/transcripts.md) for transcript identity, versions, isoforms, transcript selection, and transcript-dependent consequences
-- [`references/coding-sequence-and-protein-consequences.md`](references/coding-sequence-and-protein-consequences.md) for coding frames, codons, genetic codes, molecular consequence terms, and protein consequences
-- [`references/inheritance-and-phase.md`](references/inheritance-and-phase.md) for genotype, ploidy, inheritance, phase, segregation, mosaicism, heteroplasmy, and pedigree reasoning
-- [`references/gene-expression.md`](references/gene-expression.md) for gene and transcript expression, assay context, cellular composition, normalization, and regulatory interpretation
+- [`references/genome-organisation.md`](references/genome-organisation.html) for DNA, chromosomes, genes, genomes, genomic compartments, and the distinction between genetic and inherited
+- [`references/reference-genomes.md`](references/reference-genomes.html) for assemblies, patch releases, exact reference identity, sequence provenance, coordinate systems, and migration
+- [`references/reference-sequence-files.md`](references/reference-sequence-files.html) for FASTA, sequence identifiers, FAI indexes, dictionaries, masking, and reference-file provenance
+- [`references/sequencing-reads-and-quality.md`](references/sequencing-reads-and-quality.html) for FASTQ, paired reads, preprocessing, and Phred-scaled quality
+- [`references/alignment-files-and-indexes.md`](references/alignment-files-and-indexes.html) for SAM, BAM, CRAM, alignment semantics, BAI, CSI, and CRAI
+- [`references/genomic-intervals.md`](references/genomic-intervals.html) for BED, interval coordinate conventions, strand, and interval semantics
+- [`references/variant-call-files-and-indexes.md`](references/variant-call-files-and-indexes.html) for VCF, BCF, gVCF, genotype fields, BGZF, TBI, and CSI
+- [`references/variant-representation.md`](references/variant-representation.html) for allele identity, normalization, decomposition, equivalent representations, and VCF-versus-HGVS representation
+- [`references/variant-nomenclature.md`](references/variant-nomenclature.html) for HGVS sequence-variant descriptions, versioned reference sequences, MANE transcript selection, molecular-level prefixes, and predicted versus observed consequences
+- [`references/transcripts.md`](references/transcripts.html) for transcript identity, versions, isoforms, transcript selection, and transcript-dependent consequences
+- [`references/coding-sequence-and-protein-consequences.md`](references/coding-sequence-and-protein-consequences.html) for coding frames, codons, genetic codes, molecular consequence terms, and protein consequences
+- [`references/inheritance-and-phase.md`](references/inheritance-and-phase.html) for genotype, ploidy, inheritance, phase, segregation, mosaicism, heteroplasmy, and pedigree reasoning
+- [`references/gene-expression.md`](references/gene-expression.html) for gene and transcript expression, assay context, cellular composition, normalization, and regulatory interpretation
 

@@ -1,13 +1,14 @@
-title: Dev docs
-description: Dev docs made with Jeykll using the Just the Docs theme.
+title: Biology Skills
+description: Biology Skills provides expert biological operating rules for AI agents, helping models handle genomics, evidence, provenance, reference systems and scientific interpretation correctly. Open, reviewable guidance for building biologically reliable AI workflows.
 url: https://biologyskills.github.io
 theme: just-the-docs
+color_scheme: dark
 # ![Pipe Dev logo](/assets/images/pipedev_logo_1.png "logo")
 
 
 aux_links:
-  Github: https://github.com/biologyskills.github.io
-  SwitzerlandOmics.ch: https://switzerlandomics.ch
+  Website source: https://github.com/biologyskills/biologyskills.github.io
+  Github: https://github.com/biologyskills/biology-skills
 
 callouts:
   warning:
@@ -20,10 +21,10 @@ search_enabled: true
 search:
   # Split pages into sections that can be searched individually
   # Supports 1 - 6, default: 2
-  heading_level: 2
+  heading_level: 3
   # Maximum amount of previews per search result
   # Default: 3
-  previews: 2
+  previews: 3
   # Maximum amount of words to display before a matched word in the preview
   # Default: 5
   preview_words_before: 3

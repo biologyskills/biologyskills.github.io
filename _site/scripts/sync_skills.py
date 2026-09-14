@@ -45,9 +45,75 @@ def first_heading(body, fallback):
     return match.group(1).strip() if match else fallback
 
 
-def write_page(source, destination, extra=None):
+def rewrite_skill_reference_links(body):
+    """
+    Rewrite source links such as:
+
+        references/genome-organisation.md
+
+    to their generated Jekyll HTML paths:
+
+        references/genome-organisation.html
+
+    The source repository itself remains unchanged.
+    """
+    pattern = re.compile(
+        r"(\]\()"
+        r"(references/[^)#\s]+)"
+        r"\.md"
+        r"(#[^)\s]+)?"
+        r"(\))"
+    )
+
+    return pattern.sub(
+        lambda match: (
+            f"{match.group(1)}"
+            f"{match.group(2)}.html"
+            f"{match.group(3) or ''}"
+            f"{match.group(4)}"
+        ),
+        body,
+    )
+
+
+def rewrite_reference_page_links(body):
+    """
+    Rewrite links between reference Markdown files in the same directory.
+
+        variant-representation.md
+        variant-representation.md#normalisation
+
+    become:
+
+        variant-representation.html
+        variant-representation.html#normalisation
+    """
+    pattern = re.compile(
+        r"(\]\()"
+        r"(?!https?://|mailto:|/|#)"
+        r"([^/)#\s]+)"
+        r"\.md"
+        r"(#[^)\s]+)?"
+        r"(\))"
+    )
+
+    return pattern.sub(
+        lambda match: (
+            f"{match.group(1)}"
+            f"{match.group(2)}.html"
+            f"{match.group(3) or ''}"
+            f"{match.group(4)}"
+        ),
+        body,
+    )
+
+
+def write_page(source, destination, extra=None, transform=None):
     text = source.read_text(encoding="utf-8")
     metadata, body = split_front_matter(text)
+
+    if transform is not None:
+        body = transform(body)
 
     extra = extra or {}
 
@@ -55,7 +121,10 @@ def write_page(source, destination, extra=None):
     metadata.update(extra)
 
     if "title" not in metadata:
-        metadata["title"] = first_heading(body, source.stem.replace("-", " ").title())
+        metadata["title"] = first_heading(
+            body,
+            source.stem.replace("-", " ").title(),
+        )
 
     destination.parent.mkdir(parents=True, exist_ok=True)
 
@@ -90,7 +159,9 @@ def write_page(source, destination, extra=None):
 
     lines.append("---")
     lines.append("")
-    lines.append("<!-- Generated from biologyskills/biology-skills. Do not edit here. -->")
+    lines.append(
+        "<!-- Generated from biologyskills/biology-skills. Do not edit here. -->"
+    )
     lines.append("")
 
     destination.write_text(
@@ -134,13 +205,14 @@ def sync_skills():
     )
 
     domains = sorted(
-        p for p in src.iterdir()
+        p
+        for p in src.iterdir()
         if p.is_dir() and (p / "SKILL.md").exists()
     )
 
     for domain_order, domain in enumerate(domains, start=1):
         skill_text = (domain / "SKILL.md").read_text(encoding="utf-8")
-        skill_meta, skill_body = split_front_matter(skill_text)
+        _, skill_body = split_front_matter(skill_text)
 
         title = first_heading(
             skill_body,
@@ -161,12 +233,22 @@ def sync_skills():
                 "has_children": "true",
                 "permalink": f"/skills/{domain.name}/",
             },
+            transform=rewrite_skill_reference_links,
         )
 
         references = domain / "references"
 
         if not references.exists():
             continue
+
+        # Preserve the canonical source structure:
+        #
+        # skills/genomics/references/foo.md
+        #
+        # becomes:
+        #
+        # pages/skills/genomics/references/foo.md
+        references_dst = domain_dst / "references"
 
         topic_order = 10
 
@@ -179,13 +261,18 @@ def sync_skills():
 
             write_page(
                 reference,
-                domain_dst / reference.name,
+                references_dst / reference.name,
                 {
                     "layout": "default",
                     "parent": title,
                     "grand_parent": "Skills",
                     "nav_order": str(topic_order),
+                    "permalink": (
+                        f"/skills/{domain.name}/references/"
+                        f"{reference.stem}.html"
+                    ),
                 },
+                transform=rewrite_reference_page_links,
             )
 
             topic_order += 10
@@ -256,7 +343,9 @@ Project governance, contribution guidance, source policy, roadmap, and release i
 
 def main():
     if not SOURCE.exists():
-        raise SystemExit(f"Biology Skills source not found: {SOURCE}")
+        raise SystemExit(
+            f"Biology Skills source not found: {SOURCE}"
+        )
 
     print(f"Syncing from: {SOURCE}")
     print(f"Syncing to:   {PAGES}")

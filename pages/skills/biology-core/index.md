@@ -53,7 +53,7 @@ When simplifying technical material, preserve distinctions whose removal could c
 
 Read the relevant reference when the task depends on it:
 
-- [`references/biological-context.md`](references/biological-context.md) for species, model systems, tissue, cell type, developmental or disease state, perturbation, assay, time, and other context-dependent biology
-- [`references/evidence-and-claims.md`](references/evidence-and-claims.md) for distinguishing observation, measurement, prediction, association, mechanism, causality, model outputs, and appropriate validation
-- [`references/identifiers-and-provenance.md`](references/identifiers-and-provenance.md) for identifier namespaces, versions, mappings, reference systems, source-versus-derived objects, and reproducibility
+- [`references/biological-context.md`](references/biological-context.html) for species, model systems, tissue, cell type, developmental or disease state, perturbation, assay, time, and other context-dependent biology
+- [`references/evidence-and-claims.md`](references/evidence-and-claims.html) for distinguishing observation, measurement, prediction, association, mechanism, causality, model outputs, and appropriate validation
+- [`references/identifiers-and-provenance.md`](references/identifiers-and-provenance.html) for identifier namespaces, versions, mappings, reference systems, source-versus-derived objects, and reproducibility
 

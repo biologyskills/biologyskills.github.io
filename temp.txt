@@ -1,0 +1,26 @@
+
+# copy file or directory contents to clipboard with filename headers, no temp files
+cpc() {
+  if [ -z "$1" ]; then
+    echo "usage: cpc <file|directory>"
+    return 1
+  fi
+
+  {
+    if [ -f "$1" ]; then
+      echo "# $1 ----"
+      cat "$1"
+      echo
+    elif [ -d "$1" ]; then
+      find "$1" -type f | sort | while read -r f; do
+        echo "# $f ----"
+        cat "$f"
+        echo
+      done
+    else
+      echo "not a file or directory: $1" >&2
+      return 1
+    fi
+  } | pbcopy
+}
+
