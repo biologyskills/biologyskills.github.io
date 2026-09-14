@@ -3,6 +3,7 @@ layout: default
 title: Roadmap
 parent: Project
 nav_order: 50
+permalink: /project/roadmap.html
 ---
 
 <!-- Generated from biologyskills/biology-skills. Do not edit here. -->

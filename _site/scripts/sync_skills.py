@@ -488,18 +488,18 @@ Project governance, contribution guidance, source policy, roadmap, and release i
         source = SOURCE / filename
 
         if source.exists():
+            output_name = filename.lower().replace("_", "-")
+            slug = Path(output_name).stem
+
             write_page(
                 source,
-                project
-                / filename.lower().replace(
-                    "_",
-                    "-",
-                ),
+                project / output_name,
                 {
                     "layout": "default",
                     "title": title,
                     "parent": "Project",
                     "nav_order": str(order),
+                    "permalink": f"/project/{slug}.html",
                 },
             )
 

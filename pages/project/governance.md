@@ -3,6 +3,7 @@ layout: default
 title: Governance
 parent: Project
 nav_order: 20
+permalink: /project/governance.html
 ---
 
 <!-- Generated from biologyskills/biology-skills. Do not edit here. -->

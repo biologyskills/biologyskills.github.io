@@ -3,6 +3,7 @@ layout: default
 title: Style guide
 parent: Project
 nav_order: 40
+permalink: /project/style-guide.html
 ---
 
 <!-- Generated from biologyskills/biology-skills. Do not edit here. -->

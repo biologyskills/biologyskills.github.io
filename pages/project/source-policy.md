@@ -3,6 +3,7 @@ layout: default
 title: Source policy
 parent: Project
 nav_order: 30
+permalink: /project/source-policy.html
 ---
 
 <!-- Generated from biologyskills/biology-skills. Do not edit here. -->

@@ -1,0 +1,258 @@
+.
+├── 404.html
+├── Gemfile
+├── Gemfile.lock
+├── LICENSE
+├── README.md
+├── _config.yml
+├── _data
+│   └── biology_skills.json
+├── _includes
+│   ├── components
+│   │   ├── aux_nav.html
+│   │   ├── breadcrumbs.html
+│   │   ├── children_nav.html
+│   │   ├── footer.html
+│   │   ├── header.html
+│   │   ├── mermaid.html
+│   │   ├── search_footer.html
+│   │   ├── search_header.html
+│   │   └── sidebar.html
+│   ├── fix_linenos.html
+│   ├── footer_custom.html
+│   ├── head.html
+│   ├── head_custom.html
+│   ├── header_custom.html
+│   ├── mathjax.html
+│   ├── nav.html
+│   ├── nav_footer_custom.html
+│   ├── search_placeholder_custom.html
+│   ├── sorted_pages.html
+│   ├── title.html
+│   └── toc_heading_custom.html
+├── _layouts
+│   ├── about.html
+│   ├── default.html
+│   ├── home.html
+│   ├── mathjax.html
+│   ├── minimal.html
+│   ├── page.html
+│   ├── post.html
+│   └── table_wrappers.html
+├── _sass
+│   ├── base.scss
+│   ├── buttons.scss
+│   ├── code.scss
+│   ├── color_schemes
+│   │   ├── dark.scss
+│   │   ├── legacy_light.scss
+│   │   └── light.scss
+│   ├── content.scss
+│   ├── custom
+│   │   ├── _theme.scss
+│   │   ├── custom.scss
+│   │   └── setup.scss
+│   ├── labels.scss
+│   ├── layout.scss
+│   ├── modules.scss
+│   ├── navigation.scss
+│   ├── print.scss
+│   ├── search.scss
+│   ├── skiptomain.scss
+│   ├── support
+│   │   ├── _functions.scss
+│   │   ├── _variables.scss
+│   │   ├── custom.scss
+│   │   ├── mixins
+│   │   │   ├── _buttons.scss
+│   │   │   ├── _layout.scss
+│   │   │   ├── _typography.scss
+│   │   │   └── mixins.scss
+│   │   └── support.scss
+│   ├── tables.scss
+│   ├── typography.scss
+│   └── utilities
+│       ├── _colors.scss
+│       ├── _layout.scss
+│       ├── _lists.scss
+│       ├── _spacing.scss
+│       ├── _typography.scss
+│       └── utilities.scss
+├── _site
+│   ├── 404.html
+│   ├── LICENSE
+│   ├── README.md
+│   ├── android-chrome-192x192.png
+│   ├── android-chrome-512x512.png
+│   ├── apple-touch-icon.png
+│   ├── assets
+│   │   ├── css
+│   │   │   ├── custom.css
+│   │   │   ├── just-the-docs-dark.css
+│   │   │   ├── just-the-docs-dark.css.map
+│   │   │   ├── just-the-docs-default.css
+│   │   │   ├── just-the-docs-default.css.map
+│   │   │   ├── just-the-docs-head-nav.css
+│   │   │   ├── just-the-docs-light.css
+│   │   │   └── just-the-docs-light.css.map
+│   │   ├── images
+│   │   │   ├── biologyskills_mascot_compressed.jpg
+│   │   │   └── logos
+│   │   │       ├── SwissPedHealth_Pipeline_Devs.png
+│   │   │       ├── SwissPedHealth_Pipeline_Devs_wide_1.png
+│   │   │       ├── SwissPedHealth_Pipeline_Devs_wide_1_pink.png
+│   │   │       ├── SwissPedHealth_Pipeline_Devs_wide_2.png
+│   │   │       ├── logo_v1.png
+│   │   │       ├── logo_v1.svg
+│   │   │       ├── logo_v2.graphml
+│   │   │       ├── logo_v2.png
+│   │   │       ├── logo_v2.svg
+│   │   │       └── logo_v2_hires.png
+│   │   └── js
+│   │       ├── just-the-docs.js
+│   │       ├── mathjax-script-type.js
+│   │       ├── search-data.json
+│   │       └── vendor
+│   │           └── lunr.min.js
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── install
+│   │   └── index.html
+│   ├── jek.sh
+│   ├── kill_serve.sh
+│   ├── mstile-150x150.png
+│   ├── pages
+│   │   └── project
+│   │       ├── changelog.html
+│   │       ├── contributing.html
+│   │       ├── governance.html
+│   │       ├── roadmap.html
+│   │       ├── source-policy.html
+│   │       └── style-guide.html
+│   ├── project
+│   │   └── index.html
+│   ├── scripts
+│   │   └── sync_skills.py
+│   ├── site.webmanifest
+│   └── skills
+│       ├── bioinformatics
+│       │   ├── index.html
+│       │   └── references
+│       │       ├── metadata-and-provenance.html
+│       │       ├── qc-outputs-and-sample-identity.html
+│       │       └── qualifying-evidence.html
+│       ├── biology-core
+│       │   ├── index.html
+│       │   └── references
+│       │       ├── biological-context.html
+│       │       ├── evidence-and-claims.html
+│       │       └── identifiers-and-provenance.html
+│       ├── genomics
+│       │   ├── index.html
+│       │   └── references
+│       │       ├── alignment-files-and-indexes.html
+│       │       ├── coding-sequence-and-protein-consequences.html
+│       │       ├── gene-expression.html
+│       │       ├── genome-organisation.html
+│       │       ├── genomic-intervals.html
+│       │       ├── inheritance-and-phase.html
+│       │       ├── qualifying-variants.html
+│       │       ├── reference-genomes.html
+│       │       ├── reference-sequence-files.html
+│       │       ├── sequencing-reads-and-quality.html
+│       │       ├── transcripts.html
+│       │       ├── variant-call-files-and-indexes.html
+│       │       ├── variant-nomenclature.html
+│       │       └── variant-representation.html
+│       ├── index.html
+│       └── quinary-inference
+│           ├── index.html
+│           └── references
+│               └── explanatory-hypotheses-and-posterior-support.html
+├── android-chrome-192x192.png
+├── android-chrome-512x512.png
+├── apple-touch-icon.png
+├── assets
+│   ├── css
+│   │   ├── custom.css
+│   │   ├── just-the-docs-dark.scss
+│   │   ├── just-the-docs-default.scss
+│   │   └── just-the-docs-light.scss
+│   ├── images
+│   │   ├── biologyskills_mascot_compressed.jpg
+│   │   ├── favicon_package_v0.16
+│   │   └── logos
+│   │       ├── SwissPedHealth_Pipeline_Devs.png
+│   │       ├── SwissPedHealth_Pipeline_Devs_wide_1.png
+│   │       ├── SwissPedHealth_Pipeline_Devs_wide_1_pink.png
+│   │       ├── SwissPedHealth_Pipeline_Devs_wide_2.png
+│   │       ├── logo_v1.png
+│   │       ├── logo_v1.svg
+│   │       ├── logo_v2.graphml
+│   │       ├── logo_v2.png
+│   │       ├── logo_v2.svg
+│   │       └── logo_v2_hires.png
+│   └── js
+│       ├── just-the-docs.js
+│       ├── mathjax-script-type.js
+│       └── zzzz-search-data.json
+├── favicon-16x16.png
+├── favicon-32x32.png
+├── favicon.ico
+├── index.md
+├── jek.sh
+├── kill_serve.sh
+├── mstile-150x150.png
+├── pages
+│   ├── install.md
+│   ├── project
+│   │   ├── changelog.md
+│   │   ├── contributing.md
+│   │   ├── governance.md
+│   │   ├── index.md
+│   │   ├── roadmap.md
+│   │   ├── source-policy.md
+│   │   └── style-guide.md
+│   └── skills
+│       ├── bioinformatics
+│       │   ├── index.md
+│       │   └── references
+│       │       ├── metadata-and-provenance.md
+│       │       ├── qc-outputs-and-sample-identity.md
+│       │       └── qualifying-evidence.md
+│       ├── biology-core
+│       │   ├── index.md
+│       │   └── references
+│       │       ├── biological-context.md
+│       │       ├── evidence-and-claims.md
+│       │       └── identifiers-and-provenance.md
+│       ├── genomics
+│       │   ├── index.md
+│       │   └── references
+│       │       ├── alignment-files-and-indexes.md
+│       │       ├── coding-sequence-and-protein-consequences.md
+│       │       ├── gene-expression.md
+│       │       ├── genome-organisation.md
+│       │       ├── genomic-intervals.md
+│       │       ├── inheritance-and-phase.md
+│       │       ├── qualifying-variants.md
+│       │       ├── reference-genomes.md
+│       │       ├── reference-sequence-files.md
+│       │       ├── sequencing-reads-and-quality.md
+│       │       ├── transcripts.md
+│       │       ├── variant-call-files-and-indexes.md
+│       │       ├── variant-nomenclature.md
+│       │       └── variant-representation.md
+│       ├── index.md
+│       └── quinary-inference
+│           ├── index.md
+│           └── references
+│               └── explanatory-hypotheses-and-posterior-support.md
+├── scripts
+│   └── sync_skills.py
+├── site.webmanifest
+└── temp
+
+49 directories, 206 files

@@ -3,6 +3,7 @@ layout: default
 title: Contributing
 parent: Project
 nav_order: 10
+permalink: /project/contributing.html
 ---
 
 <!-- Generated from biologyskills/biology-skills. Do not edit here. -->

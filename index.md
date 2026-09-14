@@ -22,9 +22,6 @@ Expert biological assumptions **missing from foundation models**, made explicit 
 
 Biology Skills follows the open [Agent Skills](https://agentskills.io/) format. Install the skills once and your agent can load the relevant biological guidance and references when a task requires them.
 
-[Install Biology Skills]({{ '/install/' | relative_url }}){: .btn .btn-primary }
-[Browse skills]({{ '/skills/' | relative_url }}){: .btn }
-[GitHub](https://github.com/biologyskills/biology-skills){: .btn }
 
 <div class="biology-skills-badges" aria-label="Biology Skills project statistics">
   <a
@@ -51,6 +48,10 @@ Biology Skills follows the open [Agent Skills](https://agentskills.io/) format. 
   </a>
 </div>
 
+[Install Biology Skills]({{ '/install/' | relative_url }}){: .btn .btn-primary }
+[Browse skills]({{ '/skills/' | relative_url }}){: .btn }
+[GitHub](https://github.com/biologyskills/biology-skills){: .btn }
+
 ---
 
 ## How it works
@@ -61,27 +62,29 @@ Each biological domain is an Agent Skill:
 genomics/
 ├── SKILL.md
 └── references/
+    ├── reference-genomes.md
+    └── variant-representation.md
 ````
 
-Your agent discovers the skill from its description, loads `SKILL.md` when the domain is relevant, and reads focused references only when needed.
+`SKILL.md` contains the cross-cutting rules for the domain. Reference pages provide focused expert guidance for specific biological or computational topics.
+
+Your agent discovers the skill from its description, loads `SKILL.md` when the domain is relevant, and reads only the references needed for the task.
 
 [Installation instructions →]({{ '/install/' | relative_url }})
 
 ---
 
-## Available skills
+## Skill domains
 
-### [Biology core]({{ '/skills/biology-core/' | relative_url }})
+Biology Skills currently includes domains for:
 
-Biological context, evidence, provenance, identifiers, uncertainty and valid inference.
+- **[Biology core]({{ '/skills/biology-core/' | relative_url }})** — biological context, evidence, provenance and valid inference
+- **[Bioinformatics]({{ '/skills/bioinformatics/' | relative_url }})** — computational identity, metadata, provenance, interoperability and qualifying evidence
+- **[Genomics]({{ '/skills/genomics/' | relative_url }})** — reference systems, sequencing data, variants, transcripts, inheritance and qualifying variants
+- **[Quinary inference]({{ '/skills/quinary-inference/' | relative_url }})** — causal explanations, unresolved evidence, competing hypotheses and posterior support
+- **[Synthetic biology]({{ '/skills/synthetic-biology/' | relative_url }})** — patient-specific target identity, peptide:HLA inference, finite target selection and engineered sequence design
 
-Use Biology core when omitted context, evidence type or provenance could change the biological conclusion.
-
-### [Genomics]({{ '/skills/genomics/' | relative_url }})
-
-Reference genomes, sequencing data, coordinates, variants, HGVS nomenclature, transcripts, molecular consequences, inheritance, phase and gene expression.
-
-Use Genomics when reference identity, file semantics, annotation, genotype or biological context affect interpretation.
+[Browse all skills and references →]({{ '/skills/' | relative_url }})
 
 ---
 
@@ -97,6 +100,7 @@ An answer can look technically convincing while silently getting the biology wro
 - a protein consequence without the transcript used to derive it
 - two heterozygous variants assumed to be in trans
 - a model score interpreted as a probability
+- a predicted HLA binder treated as a confirmed immunogenic neoantigen
 - expression treated as a fixed property of a gene
 
 **Biology Skills makes these expert assumptions explicit so an AI knows what it must preserve, verify, or qualify before reaching a conclusion.**
