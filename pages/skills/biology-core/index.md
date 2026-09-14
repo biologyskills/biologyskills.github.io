@@ -2,7 +2,7 @@
 layout: default
 title: Biology core
 parent: Skills
-nav_order: 10
+nav_order: 20
 has_children: true
 permalink: /skills/biology-core/
 name: biology-core

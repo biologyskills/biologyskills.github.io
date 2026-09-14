@@ -3,7 +3,7 @@ layout: default
 title: Sequencing reads and quality
 parent: Genomics
 grand_parent: Skills
-nav_order: 90
+nav_order: 100
 permalink: /skills/genomics/references/sequencing-reads-and-quality.html
 id: genomics.sequencing-reads-and-quality
 domain: genomics

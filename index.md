@@ -26,6 +26,31 @@ Biology Skills follows the open [Agent Skills](https://agentskills.io/) format. 
 [Browse skills]({{ '/skills/' | relative_url }}){: .btn }
 [GitHub](https://github.com/biologyskills/biology-skills){: .btn }
 
+<div class="biology-skills-badges" aria-label="Biology Skills project statistics">
+  <a
+    class="biology-skills-badge"
+    href="{{ '/skills/' | relative_url }}"
+  >
+    <strong>{{ site.data.biology_skills.skills }}</strong>
+    <span>Domains</span>
+  </a>
+
+  <a
+    class="biology-skills-badge"
+    href="{{ '/skills/' | relative_url }}"
+  >
+    <strong>{{ site.data.biology_skills.references }}</strong>
+    <span>Skill references</span>
+  </a>
+
+  <a
+    class="biology-skills-badge"
+    href="{{ '/project/changelog.html' | relative_url }}"
+  >
+    <span>v{{ site.data.biology_skills.version }}</span>
+  </a>
+</div>
+
 ---
 
 ## How it works

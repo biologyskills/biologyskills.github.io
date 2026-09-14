@@ -3,7 +3,7 @@ layout: default
 title: Variant representation
 parent: Genomics
 grand_parent: Skills
-nav_order: 130
+nav_order: 140
 permalink: /skills/genomics/references/variant-representation.html
 id: genomics.variant-representation
 domain: genomics

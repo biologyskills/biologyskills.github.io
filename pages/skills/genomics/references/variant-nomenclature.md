@@ -3,7 +3,7 @@ layout: default
 title: Variant nomenclature (HGVS)
 parent: Genomics
 grand_parent: Skills
-nav_order: 120
+nav_order: 130
 permalink: /skills/genomics/references/variant-nomenclature.html
 id: genomics.variant-nomenclature
 domain: genomics

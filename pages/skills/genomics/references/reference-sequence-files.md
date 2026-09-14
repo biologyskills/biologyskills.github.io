@@ -3,7 +3,7 @@ layout: default
 title: Reference sequence files
 parent: Genomics
 grand_parent: Skills
-nav_order: 80
+nav_order: 90
 permalink: /skills/genomics/references/reference-sequence-files.html
 id: genomics.reference-sequence-files
 domain: genomics

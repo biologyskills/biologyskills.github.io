@@ -1,0 +1,123 @@
+/*
+ * Biology Skills
+ * Site-specific components.
+ */
+
+/* Project statistics / release badges */
+.biology-skills-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0.75rem 0 1.4rem;
+}
+
+.biology-skills-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+
+  padding: 0.3rem 0.65rem;
+
+  border: 1px solid rgba(127, 127, 127, 0.28);
+  border-radius: 999px;
+
+  background: rgba(127, 127, 127, 0.08);
+
+  color: inherit;
+  font-size: 0.82rem;
+  line-height: 1.2;
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition:
+    background 120ms ease,
+    border-color 120ms ease;
+}
+
+.biology-skills-badge:hover {
+  background: rgba(127, 127, 127, 0.15);
+  border-color: rgba(127, 127, 127, 0.42);
+
+  color: inherit;
+  text-decoration: none;
+}
+
+.biology-skills-badge strong {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Scrollbars */
+
+.site-nav,
+.side-bar,
+.search-results,
+.table-responsive,
+.table-wrapper,
+pre,
+.highlight {
+  scrollbar-width: thin;
+  scrollbar-color: #55545a #1f1f22;
+}
+
+
+/* Chromium, Safari, Edge */
+
+.site-nav::-webkit-scrollbar,
+.side-bar::-webkit-scrollbar,
+.search-results::-webkit-scrollbar,
+.table-responsive::-webkit-scrollbar,
+.table-wrapper::-webkit-scrollbar,
+pre::-webkit-scrollbar,
+.highlight::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+
+.site-nav::-webkit-scrollbar-track,
+.side-bar::-webkit-scrollbar-track,
+.search-results::-webkit-scrollbar-track,
+.table-responsive::-webkit-scrollbar-track,
+.table-wrapper::-webkit-scrollbar-track,
+pre::-webkit-scrollbar-track,
+.highlight::-webkit-scrollbar-track {
+  background: #1f1f22;
+}
+
+
+.site-nav::-webkit-scrollbar-thumb,
+.side-bar::-webkit-scrollbar-thumb,
+.search-results::-webkit-scrollbar-thumb,
+.table-responsive::-webkit-scrollbar-thumb,
+.table-wrapper::-webkit-scrollbar-thumb,
+pre::-webkit-scrollbar-thumb,
+.highlight::-webkit-scrollbar-thumb {
+  background: #55545a;
+  border: 2px solid #1f1f22;
+  border-radius: 999px;
+}
+
+
+.site-nav::-webkit-scrollbar-thumb:hover,
+.side-bar::-webkit-scrollbar-thumb:hover,
+.search-results::-webkit-scrollbar-thumb:hover,
+.table-responsive::-webkit-scrollbar-thumb:hover,
+.table-wrapper::-webkit-scrollbar-thumb:hover,
+pre::-webkit-scrollbar-thumb:hover,
+.highlight::-webkit-scrollbar-thumb:hover {
+  background: #6a686f;
+}
+
+
+.site-nav::-webkit-scrollbar-corner,
+.side-bar::-webkit-scrollbar-corner,
+.search-results::-webkit-scrollbar-corner,
+.table-responsive::-webkit-scrollbar-corner,
+.table-wrapper::-webkit-scrollbar-corner,
+pre::-webkit-scrollbar-corner,
+.highlight::-webkit-scrollbar-corner {
+  background: #1f1f22;
+}
