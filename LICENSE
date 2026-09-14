@@ -1,6 +1,13 @@
-MIT License
+Biology Skills website licensing
 
 Copyright (c) 2026 Dylan Lawless
+
+Website source code
+-------------------
+
+Unless otherwise stated, the source code used to build this website,
+including HTML, CSS, JavaScript, Liquid templates, Jekyll configuration,
+and supporting scripts, is licensed under the MIT License.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +26,36 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+Website content
+---------------
+
+Unless otherwise stated, original written content created specifically for
+this website is licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0).
+
+https://creativecommons.org/licenses/by/4.0/
+
+
+Brand assets
+------------
+
+The Biology Skills name, logos, mascot, mascot illustrations, visual identity,
+and other designated brand assets are not licensed under the MIT License or
+CC BY 4.0.
+
+All rights in these brand assets are reserved unless explicit permission is
+granted separately.
+
+The open-source licences for this repository do not grant permission to use
+the Biology Skills name, mascot, logos, or visual identity in a way that
+suggests endorsement, affiliation, or origin by Biology Skills or
+Switzerland Omics.
+
+
+Third-party materials
+---------------------
+
+Third-party software, themes, fonts, images, or other materials remain subject
+to their respective licences and copyright terms.
