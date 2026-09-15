@@ -1,1 +1,2 @@
-google_analytics_id: "G-R30N3H9SBW"  
+# this is instead applied directly in _includes/head.html
+google_analytics_id: "G-4ZV6J3NVTX"  
