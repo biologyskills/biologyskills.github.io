@@ -1,6 +1,7 @@
 title: Biology Skills
 description: Biology Skills provides expert biological operating rules for AI agents, helping models handle genomics, evidence, provenance, reference systems and scientific interpretation correctly. Open, reviewable guidance for building biologically reliable AI workflows.
-url: https://biologyskills.github.io
+url: https://biologyskills.com
+baseurl: ""
 theme: just-the-docs
 color_scheme: dark
 # ![Pipe Dev logo](/assets/images/pipedev_logo_1.png "logo")
