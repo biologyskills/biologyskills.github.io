@@ -4,6 +4,7 @@
 
   <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}">
 
+  <!---
   {% if site.ga_tracking != nil %}
     {% assign ga_tracking_ids = site.ga_tracking | split: "," %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_tracking_ids.first }}"></script>
@@ -17,6 +18,20 @@
       {% endfor %}
     </script>
   {% endif %}
+  --->
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZV6J3NVTX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZV6J3NVTX');
+</script>
+
+
 
   {% if site.search_enabled != false %}
     <script src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script>

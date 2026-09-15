@@ -5,6 +5,8 @@ theme: just-the-docs
 color_scheme: dark
 # ![Pipe Dev logo](/assets/images/pipedev_logo_1.png "logo")
 
+plugins:
+  - jekyll-sitemap
 
 aux_links:
   Website source: https://github.com/biologyskills/biologyskills.github.io

@@ -117,7 +117,7 @@ The skills are source-linked, version-controlled and designed to work with autho
 
 Biology Skills is an independent open-source project initiated and maintained by Switzerland Omics. Scientific contribution, review and maintainership are open to the wider biology and AI communities.
 
-[Contribute](https://github.com/biologyskills/biology-skills/blob/main/CONTRIBUTING.md){: .btn }
+[Contribute](https://github.com/biologyskills/biology-skills/blob/master/CONTRIBUTING.md){: .btn }
 [View source](https://github.com/biologyskills/biology-skills){: .btn }
 
 
