@@ -9,6 +9,10 @@ permalink: /project/changelog.html
 <!-- Generated from biologyskills/biology-skills. Do not edit here. -->
 # Changelog
 
+## 0.5.1
+
+* Added native pedigree JSON template to support direct construction of pedigree files in `clinical-genetics`.
+
 ## 0.5.0
 
 Added clinical-genetics guidance for structured pedigree data and family-based interpretation.
