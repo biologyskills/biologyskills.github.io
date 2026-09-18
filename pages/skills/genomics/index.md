@@ -2,7 +2,7 @@
 layout: default
 title: Genomics
 parent: Skills
-nav_order: 50
+nav_order: 60
 has_children: true
 permalink: /skills/genomics/
 name: genomics

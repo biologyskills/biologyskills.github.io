@@ -2,7 +2,7 @@
 layout: default
 title: Experimental design
 parent: Skills
-nav_order: 40
+nav_order: 50
 has_children: true
 permalink: /skills/experimental-design/
 name: experimental-design

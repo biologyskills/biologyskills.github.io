@@ -9,6 +9,15 @@ permalink: /project/changelog.html
 <!-- Generated from biologyskills/biology-skills. Do not edit here. -->
 # Changelog
 
+## 0.5.0
+
+Added clinical-genetics guidance for structured pedigree data and family-based interpretation.
+
+* Added the `clinical-genetics` Agent Skill.
+* Added guidance for pedigree identity, typed family and reproductive relationships, clinical states, segregation, and genomic findings.
+* Added interoperability guidance for FHIR, EHR, biobank, and PLINK workflows.
+* Updated routing and documentation for the new domain.
+
 ## 0.4.0
 
 Expanded Biology Skills with expert guidance for measurement validity, experimental design, structural biology, and biological statistics.

@@ -82,6 +82,7 @@ Biology Skills currently includes domains for:
 * **[Biology core]({{ '/skills/biology-core/' | relative_url }})** — context, measurement, observability, evidence, provenance and valid inference
 * **[Bioinformatics]({{ '/skills/bioinformatics/' | relative_url }})** — computational identity, metadata, mappings, provenance, interoperability and evidence semantics
 * **[Genomics]({{ '/skills/genomics/' | relative_url }})** — reference systems, sequencing data, variants, transcripts, inheritance, callability and population frequency
+* **[Clinical genetics]({{ '/skills/clinical-genetics/' | relative_url }})** — pedigree identity, family relationships, reproductive roles, clinical states, segregation and interoperability
 * **[Experimental design]({{ '/skills/experimental-design/' | relative_url }})** — experimental units, replication, dependence, controls and technical confounding
 * **[Structural biology]({{ '/skills/structural-biology/' | relative_url }})** — residue identity, isoforms, constructs, structure mappings, predicted structures and molecular state
 * **[Biological statistics]({{ '/skills/biological-statistics/' | relative_url }})** — ascertainment, selection, denominators, target populations and transportability
@@ -103,6 +104,7 @@ An answer can look technically convincing while silently getting the biology wro
 - a genomic coordinate without its reference sequence
 - a protein consequence without the transcript used to derive it
 - two heterozygous variants assumed to be in trans
+- a parent-child relationship recorded without distinguishing biological, adoptive or reproductive roles
 - a model score interpreted as a probability
 - a predicted HLA binder treated as a confirmed immunogenic neoantigen
 - expression treated as a fixed property of a gene
