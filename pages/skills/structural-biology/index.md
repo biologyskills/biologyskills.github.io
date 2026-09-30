@@ -2,7 +2,7 @@
 layout: default
 title: Structural biology
 parent: Skills
-nav_order: 80
+nav_order: 90
 has_children: true
 permalink: /skills/structural-biology/
 name: structural-biology

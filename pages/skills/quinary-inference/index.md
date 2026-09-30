@@ -2,7 +2,7 @@
 layout: default
 title: Quinary inference
 parent: Skills
-nav_order: 70
+nav_order: 80
 has_children: true
 permalink: /skills/quinary-inference/
 name: quinary-inference

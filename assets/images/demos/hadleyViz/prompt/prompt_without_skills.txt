@@ -1,0 +1,48 @@
+Hey, could you make a plot in R from ClinVar for me?
+
+I’m preparing a conference slide and want to show where expert-reviewed TP53 variants occur and how their clinical classifications differ.
+
+Importantly, please take one representative variant from each `clinical_classification` category and label it on the plot using `ggrepel`, including the variant information in the label.
+
+Please use this exact query:
+
+```r
+gene <- "TP53"
+transcript_of_interest <- "NM_000546.6"
+
+query <- paste0(
+  gene,
+  '[gene] AND "reviewed by expert panel"[review status] AND single_gene[prop]'
+)
+
+eutils_base <- "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+```
+
+Please retrieve the data directly from NCBI ClinVar using E-utilities, without an API key.
+
+For the retrieval, please use this pattern because very large `retmax` values can fail:
+
+1. Call `esearch.fcgi` first with `retmax = 0` and `retmode = "json"` to get the total record count.
+2. Retrieve the ClinVar IDs in pages using `retstart` and something modest such as `retmax = 1000`.
+3. Pause about 0.4 seconds between requests.
+4. Once all IDs are collected, call `esummary.fcgi` in batches of around 100 IDs, again using `retmode = "json"` and a short delay between requests.
+5. Keep everything in memory. There is no need to save JSON, XML, TSV, or other intermediate files.
+
+From the returned ClinVar summaries, please extract at least:
+
+- ClinVar ID/accession
+- variant title
+- clinical classification
+- review status
+- transcript annotation for `NM_000546.6`
+- protein HGVS annotation
+- TP53 amino-acid position where it can be identified
+
+For the figure, please restrict the plotted records to variants associated with `NM_000546.6` that have both a clinical classification and an identifiable protein position. Please state clearly how many records were returned and how many remained after filtering.
+
+Then make whatever `ggplot2` visualisation you think communicates the result most clearly for a conference slide. The main goal is to show where the expert-reviewed TP53 variants occur across the protein and how their clinical classifications differ.
+
+Please save only the final plot.
+
+ClinVar:
+https://www.ncbi.nlm.nih.gov/clinvar/

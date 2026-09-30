@@ -2,7 +2,7 @@
 layout: default
 title: Synthetic biology
 parent: Skills
-nav_order: 90
+nav_order: 100
 has_children: true
 permalink: /skills/synthetic-biology/
 name: synthetic-biology
