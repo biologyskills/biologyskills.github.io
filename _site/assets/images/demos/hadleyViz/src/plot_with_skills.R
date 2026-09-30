@@ -436,6 +436,14 @@ classification_counts <- plot_data |>
 
 classification_levels <- classification_counts$clinical_classification
 
+classification_levels <- c(
+  "Pathogenic",
+  "Likely pathogenic",
+  "Uncertain significance",
+  "Likely benign",
+  "Benign"
+)
+
 plot_data <- plot_data |>
   mutate(
     clinical_classification = factor(
